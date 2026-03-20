@@ -30,26 +30,27 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| **Total** | **0** | **0** | **0** | **0** | **$0.00** | **$0.00** | **$0.00** |
+| k2p5 | 48 | 136K | 8K | 2.0M | $1.13 | $5.41 | $4.53 |
+| **Total** | **48** | **136K** | **8K** | **2.0M** | **$1.13** | **$5.41** | **$4.53** |
 
-_0 total tokens processed. 0% cache hit rate._
+_2.1M total tokens processed. 93.3% cache hit rate._
 
-_$0.00 total saved ($0.00 caching + $0.00 model routing vs all-Opus)._
+_$9.94 total saved ($5.41 caching + $4.53 model routing vs all-Opus)._
 
-_Model savings are modest because ~0% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~93.3% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| k2p5 | 248 | 4.5M | 42K | 7.3M | $16.48 | $19.79 | $65.98 |
-| **Total** | **248** | **4.5M** | **42K** | **7.3M** | **$16.48** | **$19.79** | **$65.98** |
+| k2p5 | 296 | 4.6M | 50K | 9.3M | $17.61 | $25.20 | $70.51 |
+| **Total** | **296** | **4.6M** | **50K** | **9.3M** | **$17.61** | **$25.20** | **$70.51** |
 
-_11.9M total tokens processed. 61.4% cache hit rate._
+_14.1M total tokens processed. 66.2% cache hit rate._
 
-_$85.77 total saved ($19.79 caching + $65.98 model routing vs all-Opus)._
+_$95.71 total saved ($25.20 caching + $70.51 model routing vs all-Opus)._
 
-_Model savings are modest because ~61.4% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~66.2% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
 ## Projects
@@ -62,5 +63,5 @@ _Model savings are modest because ~61.4% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-20 18:07 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-20 19:07 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
