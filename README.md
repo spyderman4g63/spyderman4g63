@@ -30,7 +30,7 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-sonnet-4-6 | 9,104 | 9K | 1.9M | 506.3M | $228.00 | $1,367.08 | $726.09 |
+| claude-sonnet-4-6 | 9,270 | 9K | 2.0M | 512.7M | $231.12 | $1,384.42 | $735.94 |
 | claude-opus-4-6 | 325 | 381 | 74K | 41.4M | $111.06 | $559.73 | $0.00 |
 | gpt-5.3-codex | 258 | 1.7M | 101K | 24.5M | $18.58 | $45.94 | $50.40 |
 | gpt-5.3-codex-spark | 211 | 595K | 105K | 12.2M | $10.97 | $23.02 | $25.01 |
@@ -38,11 +38,11 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | gpt-5.4 | 129 | 1.0M | 57K | 7.1M | $5.50 | $13.48 | $22.72 |
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.41 | $0.00 | $1.63 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
-| **Total** | **10,279** | **4.6M** | **2.3M** | **607.7M** | **$383.51** | **$2,052.39** | **$861.94** |
+| **Total** | **10,445** | **4.6M** | **2.4M** | **614.1M** | **$386.63** | **$2,069.73** | **$871.79** |
 
-_629.5M total tokens processed. 96.5% cache hit rate._
+_636.1M total tokens processed. 96.5% cache hit rate._
 
-_$2,914.34 total saved ($2,052.39 caching + $861.94 model routing vs all-Opus)._
+_$2,941.52 total saved ($2,069.73 caching + $871.79 model routing vs all-Opus)._
 
 _Model savings are modest because ~96.5% of tokens are cache reads, where price differences between models are small._
 
@@ -50,7 +50,7 @@ _Model savings are modest because ~96.5% of tokens are cache reads, where price 
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-sonnet-4-6 | 9,272 | 9K | 1.9M | 506.3M | $181.50 | $1,367.08 | $726.09 |
+| claude-sonnet-4-6 | 9,441 | 9K | 2.0M | 512.7M | $183.97 | $1,384.42 | $735.94 |
 | claude-opus-4-6 | 334 | 381 | 74K | 41.4M | $67.80 | $559.73 | $0.00 |
 | k2p5 | 496 | 5.6M | 98K | 23.3M | $25.35 | $62.93 | $101.45 |
 | gpt-5.3-codex | 258 | 1.7M | 101K | 24.5M | $20.78 | $45.94 | $50.40 |
@@ -58,11 +58,11 @@ _Model savings are modest because ~96.5% of tokens are cache reads, where price 
 | gpt-5.4 | 130 | 1.0M | 57K | 7.1M | $7.61 | $13.48 | $22.83 |
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.40 | $0.00 | $1.63 |
 | gpt-5.2-codex | 1 | 33K | 31 | 0 | $0.08 | $0.00 | $0.42 |
-| **Total** | **10,705** | **9.2M** | **2.4M** | **615.0M** | **$313.72** | **$2,072.18** | **$927.84** |
+| **Total** | **10,874** | **9.2M** | **2.4M** | **621.4M** | **$316.19** | **$2,089.52** | **$937.69** |
 
-_641.4M total tokens processed. 95.9% cache hit rate._
+_648.1M total tokens processed. 95.9% cache hit rate._
 
-_$3,000.03 total saved ($2,072.18 caching + $927.84 model routing vs all-Opus)._
+_$3,027.21 total saved ($2,089.52 caching + $937.69 model routing vs all-Opus)._
 
 _Model savings are modest because ~95.9% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -77,5 +77,5 @@ _Model savings are modest because ~95.9% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-27 10:28 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-27 11:29 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
