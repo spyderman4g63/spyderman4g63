@@ -31,8 +31,8 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 1,287 | 115.9M | 441K | 162.9M | $2,144.10 | $2,199.52 | $0.00 |
-| claude-sonnet-4-6 | 21,400 | 127.8M | 4.8M | 1,047.7M | $879.57 | $2,828.98 | $3,083.35 |
-| k2p5 | 776 | 9.4M | 250K | 41.9M | $44.84 | $113.25 | $179.35 |
+| claude-sonnet-4-6 | 21,502 | 127.8M | 4.8M | 1,053.5M | $882.19 | $2,844.63 | $3,091.82 |
+| k2p5 | 781 | 9.6M | 255K | 42.1M | $45.49 | $113.91 | $181.96 |
 | gpt-5.3-codex | 258 | 1.7M | 101K | 24.5M | $18.58 | $45.94 | $50.40 |
 | gpt-5.3-codex-spark | 211 | 595K | 105K | 12.2M | $10.97 | $23.02 | $25.01 |
 | gpt-5.4 | 191 | 1.5M | 71K | 10.2M | $7.80 | $19.17 | $32.81 |
@@ -41,21 +41,21 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | gpt-5-codex | 11 | 159K | 1K | 85K | $0.22 | $0.23 | $2.09 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **24,203** | **257.9M** | **5.8M** | **1,302.4M** | **$3,107.77** | **$5,235.19** | **$3,384.02** |
+| **Total** | **24,310** | **258.1M** | **5.8M** | **1,308.5M** | **$3,111.04** | **$5,251.50** | **$3,395.09** |
 
-_1,602.0M total tokens processed. 81.3% cache hit rate._
+_1,608.4M total tokens processed. 81.4% cache hit rate._
 
-_$8,619.21 total saved ($5,235.19 caching + $3,384.02 model routing vs all-Opus)._
+_$8,646.59 total saved ($5,251.50 caching + $3,395.09 model routing vs all-Opus)._
 
-_Model savings are modest because ~81.3% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~81.4% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 1,296 | 115.9M | 441K | 162.9M | $2,016.38 | $2,199.52 | $0.00 |
-| claude-sonnet-4-6 | 21,795 | 128.0M | 4.8M | 1,047.9M | $771.47 | $2,829.36 | $3,085.97 |
-| k2p5 | 1,024 | 14.0M | 293K | 49.2M | $61.32 | $133.04 | $245.33 |
+| claude-sonnet-4-6 | 21,899 | 128.0M | 4.8M | 1,053.7M | $773.59 | $2,845.01 | $3,094.43 |
+| k2p5 | 1,029 | 14.2M | 298K | 49.5M | $61.97 | $133.70 | $247.94 |
 | gpt-5.3-codex | 258 | 1.7M | 101K | 24.5M | $20.78 | $45.94 | $50.40 |
 | gpt-5.4 | 192 | 1.5M | 71K | 10.2M | $10.95 | $19.17 | $32.92 |
 | gpt-5.3-codex-spark | 212 | 595K | 105K | 12.2M | $10.20 | $23.02 | $25.01 |
@@ -63,13 +63,13 @@ _Model savings are modest because ~81.3% of tokens are cache reads, where price 
 | gpt-5-codex | 11 | 159K | 1K | 85K | $0.50 | $0.23 | $2.09 |
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.40 | $0.00 | $1.63 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.06 | $0.00 | $0.28 |
-| **Total** | **24,855** | **262.6M** | **5.8M** | **1,309.9M** | **$2,894.90** | **$5,255.36** | **$3,452.11** |
+| **Total** | **24,964** | **262.8M** | **5.9M** | **1,315.9M** | **$2,897.67** | **$5,271.67** | **$3,463.18** |
 
-_1,614.4M total tokens processed. 81.1% cache hit rate._
+_1,620.8M total tokens processed. 81.2% cache hit rate._
 
-_$8,707.47 total saved ($5,255.36 caching + $3,452.11 model routing vs all-Opus)._
+_$8,734.85 total saved ($5,271.67 caching + $3,463.18 model routing vs all-Opus)._
 
-_Model savings are modest because ~81.1% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~81.2% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
 ## Projects
@@ -82,5 +82,5 @@ _Model savings are modest because ~81.1% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-03-31 14:50 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-03-31 15:51 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
