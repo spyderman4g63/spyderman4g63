@@ -30,22 +30,22 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 1,287 | 115.9M | 441K | 162.9M | $2,144.10 | $2,199.52 | $0.00 |
-| claude-sonnet-4-6 | 23,324 | 127.8M | 5.3M | 1,137.3M | $930.40 | $3,070.91 | $3,217.79 |
+| claude-opus-4-6 | 1,310 | 115.9M | 445K | 163.7M | $2,146.53 | $2,211.26 | $0.00 |
+| claude-sonnet-4-6 | 23,569 | 127.8M | 5.3M | 1,147.0M | $935.61 | $3,096.95 | $3,232.50 |
 | k2p5 | 986 | 10.2M | 336K | 56.7M | $52.89 | $153.31 | $211.58 |
 | gpt-5.3-codex | 258 | 1.7M | 101K | 24.5M | $18.58 | $45.94 | $50.40 |
 | gpt-5.3-codex-spark | 211 | 595K | 105K | 12.2M | $10.97 | $23.02 | $25.01 |
 | gpt-5.4 | 191 | 1.5M | 71K | 10.2M | $7.80 | $19.17 | $32.81 |
 | gpt-5.2-codex | 63 | 372K | 22K | 2.7M | $1.09 | $5.09 | $8.47 |
+| gpt-5-codex | 19 | 317K | 4K | 135K | $0.47 | $0.37 | $4.25 |
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.41 | $0.00 | $1.63 |
-| gpt-5-codex | 11 | 159K | 1K | 85K | $0.22 | $0.23 | $2.09 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **26,337** | **258.7M** | **6.3M** | **1,406.9M** | **$3,166.65** | **$5,517.18** | **$3,550.68** |
+| **Total** | **26,613** | **258.8M** | **6.4M** | **1,417.4M** | **$3,174.54** | **$5,555.09** | **$3,567.55** |
 
-_1,712.4M total tokens processed. 82.2% cache hit rate._
+_1,723.6M total tokens processed. 82.2% cache hit rate._
 
-_$9,067.86 total saved ($5,517.18 caching + $3,550.68 model routing vs all-Opus)._
+_$9,122.64 total saved ($5,555.09 caching + $3,567.55 model routing vs all-Opus)._
 
 _Model savings are modest because ~82.2% of tokens are cache reads, where price differences between models are small._
 
@@ -53,21 +53,21 @@ _Model savings are modest because ~82.2% of tokens are cache reads, where price 
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 1,296 | 115.9M | 441K | 162.9M | $2,016.38 | $2,199.52 | $0.00 |
+| claude-opus-4-6 | 1,319 | 115.9M | 445K | 163.7M | $2,017.98 | $2,211.26 | $0.00 |
 | claude-sonnet-4-6 | 23,109 | 128.0M | 5.1M | 1,114.4M | $796.16 | $3,008.92 | $3,184.68 |
 | k2p5 | 1,234 | 14.8M | 379K | 64.1M | $69.38 | $173.10 | $277.55 |
 | gpt-5.3-codex | 258 | 1.7M | 101K | 24.5M | $20.78 | $45.94 | $50.40 |
 | gpt-5.4 | 192 | 1.5M | 71K | 10.2M | $10.95 | $19.17 | $32.92 |
 | gpt-5.3-codex-spark | 212 | 595K | 105K | 12.2M | $10.20 | $23.02 | $25.01 |
 | gpt-5.2-codex | 63 | 372K | 22K | 2.7M | $2.84 | $5.09 | $8.47 |
-| gpt-5-codex | 11 | 159K | 1K | 85K | $0.50 | $0.23 | $2.09 |
+| gpt-5-codex | 19 | 317K | 4K | 135K | $1.05 | $0.37 | $4.25 |
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.40 | $0.00 | $1.63 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.06 | $0.00 | $0.28 |
-| **Total** | **26,379** | **263.4M** | **6.2M** | **1,391.2M** | **$2,927.65** | **$5,474.98** | **$3,583.04** |
+| **Total** | **26,410** | **263.6M** | **6.3M** | **1,392.1M** | **$2,929.80** | **$5,486.85** | **$3,585.20** |
 
-_1,699.5M total tokens processed. 81.9% cache hit rate._
+_1,700.6M total tokens processed. 81.9% cache hit rate._
 
-_$9,058.02 total saved ($5,474.98 caching + $3,583.04 model routing vs all-Opus)._
+_$9,072.05 total saved ($5,486.85 caching + $3,585.20 model routing vs all-Opus)._
 
 _Model savings are modest because ~81.9% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -82,5 +82,5 @@ _Model savings are modest because ~81.9% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-01 16:18 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-01 17:19 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
