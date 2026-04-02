@@ -30,9 +30,9 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 1,551 | 115.9M | 602K | 188.3M | $2,218.79 | $2,542.24 | $0.00 |
-| claude-sonnet-4-6 | 24,072 | 127.8M | 5.4M | 1,164.4M | $946.66 | $3,144.07 | $3,259.87 |
-| k2p5 | 1,132 | 22.8M | 376K | 61.5M | $92.71 | $166.25 | $370.84 |
+| claude-opus-4-6 | 1,600 | 115.9M | 617K | 194.1M | $2,236.30 | $2,621.45 | $0.00 |
+| claude-sonnet-4-6 | 24,092 | 127.8M | 5.4M | 1,165.3M | $947.05 | $3,146.41 | $3,261.16 |
+| k2p5 | 1,156 | 26.3M | 383K | 63.0M | $103.80 | $170.19 | $415.19 |
 | gpt-5.3-codex | 352 | 2.5M | 132K | 29.8M | $24.47 | $55.98 | $67.19 |
 | gpt-5.3-codex-spark | 398 | 2.4M | 189K | 20.0M | $24.11 | $37.68 | $61.04 |
 | gpt-5-codex | 468 | 6.8M | 133K | 42.2M | $15.68 | $113.96 | $140.45 |
@@ -41,21 +41,21 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.41 | $0.00 | $1.63 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **28,233** | **280.6M** | **6.9M** | **1,519.4M** | **$3,331.91** | **$6,084.44** | **$3,943.19** |
+| **Total** | **28,326** | **284.1M** | **7.0M** | **1,527.6M** | **$3,360.90** | **$6,169.92** | **$3,988.83** |
 
-_1,850.4M total tokens processed. 82.1% cache hit rate._
+_1,862.5M total tokens processed. 82% cache hit rate._
 
-_$10,027.63 total saved ($6,084.44 caching + $3,943.19 model routing vs all-Opus)._
+_$10,158.75 total saved ($6,169.92 caching + $3,988.83 model routing vs all-Opus)._
 
-_Model savings are modest because ~82.1% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~82% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 1,561 | 115.9M | 602K | 188.3M | $2,066.56 | $2,542.24 | $0.00 |
+| claude-opus-4-6 | 1,612 | 115.9M | 617K | 194.1M | $2,076.49 | $2,621.45 | $0.00 |
 | claude-sonnet-4-6 | 23,109 | 128.0M | 5.1M | 1,114.4M | $796.16 | $3,008.92 | $3,184.68 |
-| k2p5 | 1,380 | 27.4M | 419K | 68.9M | $109.19 | $186.04 | $436.82 |
+| k2p5 | 1,404 | 30.9M | 425K | 70.3M | $120.27 | $189.98 | $481.17 |
 | gpt-5-codex | 468 | 6.8M | 133K | 42.2M | $35.10 | $113.96 | $140.45 |
 | gpt-5.3-codex | 353 | 2.5M | 132K | 29.8M | $26.47 | $55.98 | $67.19 |
 | gpt-5.3-codex-spark | 399 | 2.4M | 189K | 20.0M | $20.66 | $37.68 | $61.04 |
@@ -63,13 +63,13 @@ _Model savings are modest because ~82.1% of tokens are cache reads, where price 
 | gpt-5.2-codex | 63 | 372K | 22K | 2.7M | $2.84 | $5.09 | $8.47 |
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.40 | $0.00 | $1.63 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.06 | $0.00 | $0.28 |
-| **Total** | **27,529** | **285.3M** | **6.7M** | **1,476.7M** | **$3,068.39** | **$5,969.07** | **$3,933.48** |
+| **Total** | **27,604** | **288.9M** | **6.7M** | **1,484.0M** | **$3,089.40** | **$6,052.22** | **$3,977.83** |
 
-_1,808.7M total tokens processed. 81.6% cache hit rate._
+_1,820.0M total tokens processed. 81.5% cache hit rate._
 
-_$9,902.55 total saved ($5,969.07 caching + $3,933.48 model routing vs all-Opus)._
+_$10,030.05 total saved ($6,052.22 caching + $3,977.83 model routing vs all-Opus)._
 
-_Model savings are modest because ~81.6% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~81.5% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
 ## Projects
@@ -82,5 +82,5 @@ _Model savings are modest because ~81.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-02 15:31 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-02 16:32 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
