@@ -31,7 +31,7 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 2,277 | 115.9M | 841K | 303.0M | $2,553.97 | $4,091.54 | $0.00 |
-| claude-sonnet-4-6 | 24,455 | 127.8M | 5.5M | 1,177.3M | $954.80 | $3,178.78 | $3,280.29 |
+| claude-sonnet-4-6 | 24,471 | 127.8M | 5.5M | 1,177.8M | $955.13 | $3,180.12 | $3,281.07 |
 | k2p5 | 1,227 | 30.0M | 394K | 66.9M | $116.28 | $180.77 | $465.14 |
 | gpt-5.3-codex | 352 | 2.5M | 132K | 29.8M | $24.47 | $55.98 | $67.19 |
 | gpt-5.3-codex-spark | 398 | 2.4M | 189K | 20.0M | $24.11 | $37.68 | $61.04 |
@@ -41,11 +41,11 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.41 | $0.00 | $1.63 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **29,437** | **287.9M** | **7.3M** | **1,652.4M** | **$3,698.80** | **$7,682.97** | **$4,057.91** |
+| **Total** | **29,453** | **287.9M** | **7.3M** | **1,652.9M** | **$3,699.13** | **$7,684.31** | **$4,058.69** |
 
-_1,999.5M total tokens processed. 82.6% cache hit rate._
+_2,000.0M total tokens processed. 82.6% cache hit rate._
 
-_$11,740.88 total saved ($7,682.97 caching + $4,057.91 model routing vs all-Opus)._
+_$11,743.01 total saved ($7,684.31 caching + $4,058.69 model routing vs all-Opus)._
 
 _Model savings are modest because ~82.6% of tokens are cache reads, where price differences between models are small._
 
@@ -54,7 +54,7 @@ _Model savings are modest because ~82.6% of tokens are cache reads, where price 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 2,288 | 115.9M | 841K | 303.0M | $2,256.63 | $4,091.54 | $0.00 |
-| claude-sonnet-4-6 | 23,285 | 128.0M | 5.2M | 1,120.1M | $798.47 | $3,024.44 | $3,193.96 |
+| claude-sonnet-4-6 | 23,302 | 128.0M | 5.2M | 1,120.6M | $798.68 | $3,025.88 | $3,194.79 |
 | k2p5 | 1,476 | 34.6M | 437K | 74.2M | $132.76 | $200.56 | $531.12 |
 | gpt-5-codex | 468 | 6.8M | 133K | 42.2M | $35.10 | $113.96 | $140.45 |
 | gpt-5.3-codex | 353 | 2.5M | 132K | 29.8M | $26.47 | $55.98 | $67.19 |
@@ -63,11 +63,11 @@ _Model savings are modest because ~82.6% of tokens are cache reads, where price 
 | gpt-5.2-codex | 63 | 372K | 22K | 2.7M | $2.84 | $5.09 | $8.47 |
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.40 | $0.00 | $1.63 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.06 | $0.00 | $0.28 |
-| **Total** | **28,528** | **292.6M** | **7.0M** | **1,602.6M** | **$3,284.34** | **$7,548.41** | **$4,037.06** |
+| **Total** | **28,545** | **292.6M** | **7.0M** | **1,603.1M** | **$3,284.55** | **$7,549.85** | **$4,037.90** |
 
-_1,950.2M total tokens processed. 82.2% cache hit rate._
+_1,950.8M total tokens processed. 82.2% cache hit rate._
 
-_$11,585.47 total saved ($7,548.41 caching + $4,037.06 model routing vs all-Opus)._
+_$11,587.75 total saved ($7,549.85 caching + $4,037.90 model routing vs all-Opus)._
 
 _Model savings are modest because ~82.2% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -82,5 +82,5 @@ _Model savings are modest because ~82.2% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-03 11:50 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-03 12:52 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
