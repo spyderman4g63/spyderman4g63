@@ -30,8 +30,8 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 4,663 | 115.9M | 1.4M | 635.5M | $3,301.14 | $8,580.45 | $0.00 |
-| claude-sonnet-4-6 | 25,221 | 127.8M | 5.7M | 1,201.6M | $971.88 | $3,244.59 | $3,319.02 |
+| claude-opus-4-6 | 4,877 | 115.9M | 1.5M | 661.2M | $3,376.40 | $8,926.24 | $0.00 |
+| claude-sonnet-4-6 | 25,239 | 127.8M | 5.7M | 1,202.2M | $972.26 | $3,246.16 | $3,319.93 |
 | k2p5 | 1,520 | 41.2M | 450K | 74.2M | $152.80 | $200.58 | $611.20 |
 | gpt-5-codex | 903 | 14.2M | 238K | 77.4M | $30.86 | $209.11 | $277.80 |
 | gpt-5.4 | 522 | 6.7M | 173K | 41.3M | $30.31 | $77.59 | $131.82 |
@@ -41,20 +41,20 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.41 | $0.00 | $1.63 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **33,648** | **311.6M** | **8.3M** | **2,083.1M** | **$4,537.26** | **$12,411.05** | **$4,479.06** |
+| **Total** | **33,880** | **311.6M** | **8.5M** | **2,109.3M** | **$4,612.90** | **$12,758.42** | **$4,479.98** |
 
-_2,467.7M total tokens processed. 84.4% cache hit rate._
+_2,495.4M total tokens processed. 84.5% cache hit rate._
 
-_$16,890.12 total saved ($12,411.05 caching + $4,479.06 model routing vs all-Opus)._
+_$17,238.40 total saved ($12,758.42 caching + $4,479.98 model routing vs all-Opus)._
 
-_Model savings are modest because ~84.4% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~84.5% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 4,675 | 115.9M | 1.4M | 635.5M | $2,800.06 | $8,580.45 | $0.00 |
-| claude-sonnet-4-6 | 24,108 | 128.0M | 5.3M | 1,146.1M | $808.81 | $3,094.70 | $3,235.31 |
+| claude-opus-4-6 | 4,888 | 115.9M | 1.5M | 661.2M | $2,850.66 | $8,926.24 | $0.00 |
+| claude-sonnet-4-6 | 24,127 | 128.0M | 5.3M | 1,146.8M | $809.06 | $3,096.38 | $3,236.28 |
 | k2p5 | 1,772 | 45.8M | 492K | 81.6M | $169.28 | $220.37 | $677.18 |
 | gpt-5-codex | 904 | 14.2M | 238K | 77.4M | $69.44 | $209.11 | $277.80 |
 | gpt-5.4 | 523 | 6.7M | 173K | 41.3M | $44.47 | $77.59 | $131.93 |
@@ -63,13 +63,13 @@ _Model savings are modest because ~84.4% of tokens are cache reads, where price 
 | gpt-5.2-codex | 63 | 372K | 22K | 2.7M | $2.84 | $5.09 | $8.47 |
 | nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.40 | $0.00 | $1.63 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.06 | $0.00 | $0.28 |
-| **Total** | **32,801** | **316.4M** | **8.0M** | **2,034.8M** | **$3,942.49** | **$12,280.95** | **$4,460.84** |
+| **Total** | **33,033** | **316.4M** | **8.2M** | **2,061.1M** | **$3,993.34** | **$12,628.43** | **$4,461.81** |
 
-_2,420.1M total tokens processed. 84.1% cache hit rate._
+_2,447.9M total tokens processed. 84.2% cache hit rate._
 
-_$16,741.79 total saved ($12,280.95 caching + $4,460.84 model routing vs all-Opus)._
+_$17,090.24 total saved ($12,628.43 caching + $4,461.81 model routing vs all-Opus)._
 
-_Model savings are modest because ~84.1% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~84.2% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
 
 ## Projects
@@ -82,5 +82,5 @@ _Model savings are modest because ~84.1% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-05 21:46 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-05 22:47 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
