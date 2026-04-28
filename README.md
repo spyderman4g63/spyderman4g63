@@ -31,7 +31,7 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 9,561 | 115.9M | 3.7M | 1,235.8M | $5,113.74 | $16,683.52 | $0.00 |
-| claude-sonnet-4-6 | 16,908 | 104.9M | 4.9M | 1,003.0M | $911.40 | $2,708.17 | $2,759.72 |
+| claude-sonnet-4-6 | 16,889 | 104.3M | 4.9M | 1,002.3M | $908.97 | $2,706.47 | $2,750.64 |
 | k2p5 | 2,070 | 46.3M | 711K | 160.7M | $197.82 | $434.04 | $791.29 |
 | gpt-5-codex | 1,366 | 20.5M | 309K | 123.9M | $46.12 | $334.68 | $413.52 |
 | k2p6 | 710 | 3.4M | 209K | 89.3M | $40.18 | $241.29 | $160.73 |
@@ -41,13 +41,13 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | claude-sonnet-4 | 35 | 76 | 598 | 142K | $5.66 | $0.39 | $0.21 |
 | gpt-5.2-codex | 63 | 338K | 22K | 2.7M | $1.05 | $5.09 | $8.05 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **31,556** | **302.2M** | **10.2M** | **2,682.7M** | **$6,371.54** | **$20,532.78** | **$4,345.02** |
+| **Total** | **31,537** | **301.5M** | **10.2M** | **2,682.1M** | **$6,369.11** | **$20,531.08** | **$4,335.94** |
 
-_3,121.7M total tokens processed. 85.9% cache hit rate._
+_3,120.4M total tokens processed. 86% cache hit rate._
 
-_$24,877.81 total saved ($20,532.78 caching + $4,345.02 model routing vs all-Opus)._
+_$24,867.02 total saved ($20,531.08 caching + $4,335.94 model routing vs all-Opus)._
 
-_Model savings are modest because ~85.9% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~86% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
@@ -83,5 +83,5 @@ _Model savings are modest because ~87.3% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-28 17:41 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-28 18:01 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
