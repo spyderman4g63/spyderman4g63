@@ -31,19 +31,19 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 9,255 | 12K | 3.6M | 1,204.8M | $3,359.87 | $16,265.50 | $0.00 |
-| claude-sonnet-4-6 | 11,183 | 12K | 3.5M | 727.4M | $475.11 | $1,964.17 | $1,088.25 |
-| k2p5 | 1,628 | 37.9M | 518K | 138.1M | $163.09 | $372.91 | $652.36 |
+| claude-sonnet-4-6 | 11,088 | 11K | 3.5M | 721.9M | $472.77 | $1,949.26 | $1,080.36 |
+| k2p5 | 1,606 | 37.9M | 513K | 137.2M | $162.60 | $370.54 | $650.39 |
 | gpt-5-codex | 1,355 | 20.3M | 307K | 123.8M | $45.90 | $334.45 | $411.43 |
 | k2p6 | 710 | 3.4M | 209K | 89.3M | $40.18 | $241.29 | $160.73 |
 | gpt-5.4 | 498 | 7.4M | 160K | 50.7M | $34.16 | $95.22 | $148.32 |
 | gpt-5.3-codex-spark | 187 | 1.8M | 84K | 7.8M | $13.14 | $14.66 | $36.03 |
 | gpt-5.3-codex | 94 | 808K | 30K | 5.3M | $5.89 | $10.04 | $16.79 |
 | claude-sonnet-4 | 35 | 76 | 598 | 142K | $5.66 | $0.39 | $0.21 |
-| **Total** | **24,945** | **71.9M** | **8.5M** | **2,347.7M** | **$4,143.00** | **$19,298.63** | **$2,514.11** |
+| **Total** | **24,828** | **71.8M** | **8.5M** | **2,341.3M** | **$4,140.17** | **$19,281.35** | **$2,504.24** |
 
-_2,551.9M total tokens processed. 92% cache hit rate._
+_2,545.3M total tokens processed. 92% cache hit rate._
 
-_$21,812.73 total saved ($19,298.63 caching + $2,514.11 model routing vs all-Opus)._
+_$21,785.59 total saved ($19,281.35 caching + $2,504.24 model routing vs all-Opus)._
 
 _Model savings are modest because ~92% of tokens are cache reads, where price differences between models are small._
 
@@ -81,5 +81,5 @@ _Model savings are modest because ~87.4% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-04-30 17:05 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-04-30 18:05 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
