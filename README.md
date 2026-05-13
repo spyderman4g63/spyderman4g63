@@ -17,10 +17,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 0.0h | 1.6h | 6.0h | 6.0h |
-| AI worker hours | 1.6h | 8.2h | 13.4h | 13.4h |
-| AI concurrency hours | 1.7h | 12.4h | 34.1h | 34.1h |
+| AI worker hours | 1.5h | 8.2h | 13.4h | 13.4h |
+| AI concurrency hours | 1.6h | 12.4h | 34.1h | 34.1h |
 | Interactive sessions | 1 | 3 | 17 | 17 |
-| Worker sessions | 23 | 150 | 256 | 256 |
+| Worker sessions | 22 | 149 | 256 | 256 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -32,15 +32,15 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 4,685 | 6K | 2.1M | 600.3M | $1,863.18 | $8,104.20 | $0.00 |
 | claude-sonnet-4-6 | 3,700 | 4K | 1.7M | 290.5M | $234.40 | $784.47 | $456.30 |
-| gpt-5.5 | 2,727 | 12.3M | 436K | 67.2M | $56.78 | $181.70 | $254.89 |
+| gpt-5.5 | 2,732 | 12.3M | 436K | 67.3M | $56.88 | $181.94 | $255.36 |
 | k2p5 | 849 | 6.0M | 330K | 104.2M | $54.45 | $281.40 | $217.81 |
 | k2p6 | 847 | 3.9M | 260K | 98.3M | $45.14 | $265.55 | $180.57 |
 | gpt-5.4 | 42 | 195K | 18K | 4.0M | $1.88 | $7.62 | $7.20 |
-| **Total** | **12,850** | **22.5M** | **4.9M** | **1,164.7M** | **$2,255.83** | **$9,624.93** | **$1,116.78** |
+| **Total** | **12,855** | **22.5M** | **4.9M** | **1,164.8M** | **$2,255.93** | **$9,625.18** | **$1,117.25** |
 
-_1,267.2M total tokens processed. 91.9% cache hit rate._
+_1,267.3M total tokens processed. 91.9% cache hit rate._
 
-_$10,741.71 total saved ($9,624.93 caching + $1,116.78 model routing vs all-Opus)._
+_$10,742.43 total saved ($9,625.18 caching + $1,117.25 model routing vs all-Opus)._
 
 _Model savings are modest because ~91.9% of tokens are cache reads, where price differences between models are small._
 
@@ -79,5 +79,5 @@ _Model savings are modest because ~87.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-13 13:23 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-13 14:24 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
