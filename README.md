@@ -17,10 +17,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 2.9h | 9.4h | 11.1h | 11.1h |
-| AI worker hours | 1.0h | 7.8h | 16.7h | 16.7h |
-| AI concurrency hours | 5.3h | 23.4h | 35.6h | 35.6h |
+| AI worker hours | 1.0h | 7.7h | 16.7h | 16.7h |
+| AI concurrency hours | 5.3h | 23.3h | 35.6h | 35.6h |
 | Interactive sessions | 2 | 9 | 16 | 16 |
-| Worker sessions | 22 | 139 | 294 | 294 |
+| Worker sessions | 22 | 139 | 295 | 295 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -31,19 +31,19 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 4,668 | 6K | 2.1M | 683.0M | $1,911.16 | $9,220.80 | $0.00 |
-| gpt-5.5 | 4,601 | 20.3M | 722K | 128.1M | $97.86 | $346.01 | $441.42 |
-| claude-sonnet-4-6 | 2,057 | 2K | 929K | 102.8M | $97.07 | $277.77 | $179.27 |
+| gpt-5.5 | 4,608 | 20.4M | 723K | 128.3M | $98.11 | $346.44 | $442.55 |
+| claude-sonnet-4-6 | 2,056 | 2K | 929K | 102.8M | $97.07 | $277.77 | $179.27 |
 | k2p6 | 859 | 4.0M | 263K | 99.0M | $45.90 | $267.56 | $183.62 |
 | gpt-5.5-fast | 128 | 2.0M | 51K | 14.3M | $9.57 | $38.84 | $44.49 |
 | k2p5 | 19 | 372K | 5K | 1.4M | $1.63 | $3.84 | $6.50 |
 | gpt-5.4-fast | 37 | 135K | 3K | 1.6M | $0.87 | $3.17 | $3.43 |
 | qwen3.6-plus-free | 17 | 90 | 3K | 713K | $0.50 | $1.93 | $1.04 |
 | big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
-| **Total** | **12,391** | **27.0M** | **4.1M** | **1,031.5M** | **$2,164.84** | **$10,159.91** | **$861.03** |
+| **Total** | **12,397** | **27.0M** | **4.1M** | **1,031.7M** | **$2,165.09** | **$10,160.34** | **$862.16** |
 
-_1,115.4M total tokens processed. 92.5% cache hit rate._
+_1,115.6M total tokens processed. 92.5% cache hit rate._
 
-_$11,020.94 total saved ($10,159.91 caching + $861.03 model routing vs all-Opus)._
+_$11,022.50 total saved ($10,160.34 caching + $862.16 model routing vs all-Opus)._
 
 _Model savings are modest because ~92.5% of tokens are cache reads, where price differences between models are small._
 
@@ -54,7 +54,7 @@ _Model savings are modest because ~92.5% of tokens are cache reads, where price 
 | claude-opus-4-6 | 12,782 | 115.9M | 4.9M | 1,746.3M | $6,395.89 | $23,575.42 | $0.00 |
 | claude-sonnet-4-6 | 32,944 | 127.8M | 8.5M | 1,794.5M | $1,368.19 | $4,845.31 | $4,201.76 |
 | k2p5 | 2,444 | 47.8M | 790K | 182.3M | $209.98 | $492.29 | $839.91 |
-| gpt-5.5 | 4,601 | 20.3M | 722K | 128.1M | $97.86 | $346.01 | $441.42 |
+| gpt-5.5 | 4,608 | 20.4M | 723K | 128.3M | $98.11 | $346.44 | $442.55 |
 | gpt-5-codex | 1,366 | 20.5M | 309K | 123.9M | $46.12 | $334.68 | $413.52 |
 | k2p6 | 859 | 4.0M | 263K | 99.0M | $45.90 | $267.56 | $183.62 |
 | gpt-5.4 | 689 | 9.0M | 231K | 61.0M | $41.96 | $114.39 | $181.12 |
@@ -69,11 +69,11 @@ _Model savings are modest because ~92.5% of tokens are cache reads, where price 
 | big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **56,727** | **353.4M** | **16.2M** | **4,205.2M** | **$8,273.05** | **$30,118.73** | **$6,451.01** |
+| **Total** | **56,734** | **353.5M** | **16.2M** | **4,205.4M** | **$8,273.30** | **$30,119.15** | **$6,452.14** |
 
-_4,750.1M total tokens processed. 88.5% cache hit rate._
+_4,750.3M total tokens processed. 88.5% cache hit rate._
 
-_$36,569.73 total saved ($30,118.73 caching + $6,451.01 model routing vs all-Opus)._
+_$36,571.29 total saved ($30,119.15 caching + $6,452.14 model routing vs all-Opus)._
 
 _Model savings are modest because ~88.5% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -88,5 +88,5 @@ _Model savings are modest because ~88.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-21 23:19 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-22 00:20 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
