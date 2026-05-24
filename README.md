@@ -17,8 +17,8 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 2.9h | 5.8h | 14.0h | 14.0h |
-| AI worker hours | 2.2h | 7.4h | 16.3h | 16.3h |
-| AI concurrency hours | 6.1h | 16.0h | 39.2h | 39.2h |
+| AI worker hours | 1.7h | 7.4h | 16.3h | 16.3h |
+| AI concurrency hours | 5.6h | 16.0h | 39.2h | 39.2h |
 | Interactive sessions | 2 | 5 | 18 | 18 |
 | Worker sessions | 13 | 104 | 251 | 251 |
 
@@ -31,18 +31,18 @@ _User AI session hours measured from AI message timestamps (reading, thinking, t
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 4,279 | 5K | 1.9M | 645.3M | $1,757.58 | $8,711.58 | $0.00 |
-| gpt-5.5 | 4,767 | 21.1M | 748K | 133.1M | $101.54 | $359.55 | $458.12 |
-| claude-sonnet-4-6 | 1,966 | 2K | 914K | 100.9M | $95.41 | $272.69 | $176.09 |
+| gpt-5.5 | 4,779 | 21.1M | 749K | 133.5M | $101.76 | $360.58 | $459.15 |
+| claude-sonnet-4-6 | 1,952 | 2K | 907K | 100.3M | $94.72 | $270.95 | $174.90 |
 | gpt-5.5-fast | 128 | 2.0M | 51K | 14.3M | $9.57 | $38.84 | $44.49 |
 | k2p6 | 149 | 662K | 54K | 9.7M | $5.72 | $26.27 | $22.89 |
 | gpt-5.4-fast | 37 | 135K | 3K | 1.6M | $0.87 | $3.17 | $3.43 |
 | qwen3.6-plus-free | 17 | 90 | 3K | 713K | $0.50 | $1.93 | $1.04 |
 | big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
-| **Total** | **11,348** | **23.9M** | **3.6M** | **906.2M** | **$1,971.47** | **$9,414.03** | **$707.32** |
+| **Total** | **11,346** | **24.0M** | **3.6M** | **905.9M** | **$1,971.00** | **$9,413.31** | **$707.15** |
 
-_982.1M total tokens processed. 92.3% cache hit rate._
+_981.7M total tokens processed. 92.3% cache hit rate._
 
-_$10,121.35 total saved ($9,414.03 caching + $707.32 model routing vs all-Opus)._
+_$10,120.46 total saved ($9,413.31 caching + $707.15 model routing vs all-Opus)._
 
 _Model savings are modest because ~92.3% of tokens are cache reads, where price differences between models are small._
 
@@ -53,7 +53,7 @@ _Model savings are modest because ~92.3% of tokens are cache reads, where price 
 | claude-opus-4-6 | 13,148 | 115.9M | 5.0M | 1,809.7M | $6,551.73 | $24,431.20 | $0.00 |
 | claude-sonnet-4-6 | 32,947 | 127.8M | 8.5M | 1,794.6M | $1,368.49 | $4,845.46 | $4,201.90 |
 | k2p5 | 2,444 | 47.8M | 790K | 182.3M | $209.98 | $492.29 | $839.91 |
-| gpt-5.5 | 4,767 | 21.1M | 748K | 133.1M | $101.54 | $359.55 | $458.12 |
+| gpt-5.5 | 4,779 | 21.1M | 749K | 133.5M | $101.76 | $360.58 | $459.15 |
 | gpt-5-codex | 1,366 | 20.5M | 309K | 123.9M | $46.12 | $334.68 | $413.52 |
 | k2p6 | 859 | 4.0M | 263K | 99.0M | $45.90 | $267.56 | $183.62 |
 | gpt-5.4 | 689 | 9.0M | 231K | 61.0M | $41.96 | $114.39 | $181.12 |
@@ -68,11 +68,11 @@ _Model savings are modest because ~92.3% of tokens are cache reads, where price 
 | big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **57,262** | **354.2M** | **16.3M** | **4,273.7M** | **$8,432.87** | **$30,988.19** | **$6,467.84** |
+| **Total** | **57,274** | **354.2M** | **16.3M** | **4,274.1M** | **$8,433.09** | **$30,989.22** | **$6,468.87** |
 
-_4,822.3M total tokens processed. 88.6% cache hit rate._
+_4,822.7M total tokens processed. 88.6% cache hit rate._
 
-_$37,456.03 total saved ($30,988.19 caching + $6,467.84 model routing vs all-Opus)._
+_$37,458.09 total saved ($30,989.22 caching + $6,468.87 model routing vs all-Opus)._
 
 _Model savings are modest because ~88.6% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -87,5 +87,5 @@ _Model savings are modest because ~88.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-05-24 20:51 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-05-24 21:52 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
