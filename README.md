@@ -17,10 +17,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 0.8h | 2.3h | 7.3h | 118.0h |
-| AI worker hours | 1.4h | 13.4h | 43.9h | 262.1h |
-| AI concurrency hours | 3.2h | 18.3h | 59.8h | 515.4h |
+| AI worker hours | 1.4h | 13.6h | 43.9h | 262.2h |
+| AI concurrency hours | 3.2h | 18.4h | 59.8h | 515.5h |
 | Interactive sessions | 4 | 16 | 29 | 297 |
-| Worker sessions | 21 | 176 | 191 | 2,295 |
+| Worker sessions | 20 | 177 | 189 | 2,295 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -32,18 +32,18 @@ _AI session 365-day totals cover 104 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.5 | 7,751 | 35.5M | 1.1M | 239.9M | $172.63 | $647.99 | $784.14 |
+| gpt-5.5 | 7,769 | 35.5M | 1.1M | 240.6M | $172.98 | $649.69 | $785.75 |
 | claude-opus-4-7 | 432 | 849 | 349K | 52.0M | $166.58 | $702.03 | $0.00 |
 | claude-opus-4-6 | 264 | 349 | 91K | 20.9M | $83.85 | $282.54 | $0.00 |
 | k2p7 | 194 | 1.1M | 98K | 20.1M | $10.85 | $54.43 | $43.39 |
 | claude-sonnet-4-6 | 42 | 48 | 29K | 3.1M | $2.49 | $8.47 | $5.53 |
 | kimi-k2.7-code-highspeed | 25 | 90K | 24K | 954K | $0.92 | $0.00 | $4.59 |
 | k2p6 | 2 | 80K | 3K | 0 | $0.29 | $0.00 | $1.15 |
-| **Total** | **8,710** | **36.8M** | **1.7M** | **337.1M** | **$437.61** | **$1,695.46** | **$838.81** |
+| **Total** | **8,728** | **36.8M** | **1.7M** | **337.8M** | **$437.96** | **$1,697.16** | **$840.42** |
 
-_381.7M total tokens processed. 88.3% cache hit rate._
+_382.4M total tokens processed. 88.3% cache hit rate._
 
-_$2,534.27 total saved ($1,695.46 caching + $838.81 model routing vs all-Opus)._
+_$2,537.58 total saved ($1,697.16 caching + $840.42 model routing vs all-Opus)._
 
 _Model savings are modest because ~88.3% of tokens are cache reads, where price differences between models are small._
 
@@ -53,7 +53,7 @@ _Model savings are modest because ~88.3% of tokens are cache reads, where price 
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 13,686 | 115.9M | 5.2M | 1,852.3M | $6,720.38 | $25,007.19 | $0.00 |
 | claude-sonnet-4-6 | 33,013 | 127.8M | 8.5M | 1,799.1M | $1,372.01 | $4,857.66 | $4,209.62 |
-| gpt-5.5 | 13,827 | 62.1M | 2.1M | 414.6M | $302.35 | $1,119.42 | $1,370.35 |
+| gpt-5.5 | 13,852 | 62.2M | 2.1M | 415.4M | $302.87 | $1,121.66 | $1,372.71 |
 | k2p5 | 2,444 | 47.8M | 790K | 182.3M | $209.98 | $492.29 | $839.91 |
 | claude-opus-4-7 | 432 | 849 | 349K | 52.0M | $166.58 | $702.03 | $0.00 |
 | k2p6 | 861 | 4.1M | 266K | 99.0M | $46.19 | $267.56 | $184.77 |
@@ -72,11 +72,11 @@ _Model savings are modest because ~88.3% of tokens are cache reads, where price 
 | big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **67,579** | **396.5M** | **18.4M** | **4,675.4M** | **$8,984.49** | **$33,092.71** | **$7,436.93** |
+| **Total** | **67,604** | **396.6M** | **18.4M** | **4,676.3M** | **$8,985.01** | **$33,094.95** | **$7,439.29** |
 
-_5,277.1M total tokens processed. 88.6% cache hit rate._
+_5,278.0M total tokens processed. 88.6% cache hit rate._
 
-_$40,529.64 total saved ($33,092.71 caching + $7,436.93 model routing vs all-Opus)._
+_$40,534.24 total saved ($33,094.95 caching + $7,439.29 model routing vs all-Opus)._
 
 _Model savings are modest because ~88.6% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -91,5 +91,5 @@ _Model savings are modest because ~88.6% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-03 02:16 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-03 03:33 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
