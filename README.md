@@ -16,11 +16,11 @@
 | Metric | 24h | 7 Days | 28 Days | 365 Days |
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
-| User AI session hours | 0.0h | 4.6h | 8.6h | 121.4h |
-| AI worker hours | 0.6h | 8.5h | 43.2h | 268.8h |
-| AI concurrency hours | 0.6h | 16.8h | 60.0h | 527.6h |
-| Interactive sessions | 0 | 11 | 28 | 302 |
-| Worker sessions | 12 | 113 | 69 | 2,295 |
+| User AI session hours | 0.0h | 4.3h | 8.6h | 121.4h |
+| AI worker hours | 0.6h | 8.6h | 43.1h | 268.8h |
+| AI concurrency hours | 0.6h | 16.0h | 59.9h | 527.6h |
+| Interactive sessions | 0 | 9 | 28 | 302 |
+| Worker sessions | 11 | 111 | 68 | 2,295 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -33,17 +33,17 @@ _AI session 365-day totals cover 109 days of local assistant session history (no
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 908 | 1K | 721K | 112.9M | $365.43 | $1,524.87 | $0.00 |
-| gpt-5.5 | 7,294 | 32.6M | 1.0M | 222.2M | $159.93 | $600.18 | $724.94 |
+| gpt-5.5 | 7,292 | 32.6M | 1.0M | 222.2M | $159.83 | $600.11 | $724.48 |
 | claude-opus-4-6 | 124 | 178 | 35K | 7.6M | $37.38 | $102.71 | $0.00 |
 | k2p7 | 194 | 1.1M | 98K | 20.1M | $10.85 | $54.43 | $43.39 |
 | claude-sonnet-4-6 | 42 | 48 | 29K | 3.1M | $2.49 | $8.47 | $5.53 |
 | kimi-k2.7-code-highspeed | 25 | 90K | 24K | 954K | $0.92 | $0.00 | $4.59 |
 | k2p6 | 2 | 80K | 3K | 0 | $0.29 | $0.00 | $1.15 |
-| **Total** | **8,589** | **33.9M** | **2.0M** | **367.0M** | **$577.29** | **$2,290.65** | **$779.61** |
+| **Total** | **8,587** | **33.9M** | **2.0M** | **367.0M** | **$577.19** | **$2,290.58** | **$779.15** |
 
 _412.1M total tokens processed. 89.1% cache hit rate._
 
-_$3,070.26 total saved ($2,290.65 caching + $779.61 model routing vs all-Opus)._
+_$3,069.73 total saved ($2,290.58 caching + $779.15 model routing vs all-Opus)._
 
 _Model savings are modest because ~89.1% of tokens are cache reads, where price differences between models are small._
 
@@ -91,5 +91,5 @@ _Model savings are modest because ~88.7% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-08 18:25 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-08 19:26 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
