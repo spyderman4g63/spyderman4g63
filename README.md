@@ -17,10 +17,10 @@
 | --- | ---: | ---: | ---: | ---: |
 | Screen time (Mac) | 0h | 0h | 0h | ~0h* |
 | User AI session hours | 0.0h | 2.2h | 6.6h | 121.4h |
-| AI worker hours | 0.4h | 6.5h | 40.8h | 270.2h |
-| AI concurrency hours | 0.4h | 9.9h | 54.9h | 529.1h |
+| AI worker hours | 0.4h | 6.6h | 40.8h | 270.3h |
+| AI concurrency hours | 0.4h | 10.0h | 54.9h | 529.2h |
 | Interactive sessions | 1 | 6 | 27 | 303 |
-| Worker sessions | 6 | 89 | 8 | 2,295 |
+| Worker sessions | 7 | 90 | 7 | 2,295 |
 
 _Screen time from macOS display events, snapshotted daily. *365-day extrapolated (accumulating real data)._
 
@@ -33,26 +33,26 @@ _AI session 365-day totals cover 113 days of local assistant session history (no
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 913 | 1K | 722K | 113.2M | $367.72 | $1,529.44 | $0.00 |
-| gpt-5.5 | 6,813 | 29.2M | 1.0M | 207.8M | $146.44 | $561.28 | $662.20 |
+| gpt-5.5 | 6,797 | 29.1M | 1.0M | 207.4M | $146.07 | $560.10 | $660.51 |
 | k2p7 | 194 | 1.1M | 98K | 20.1M | $10.85 | $54.43 | $43.39 |
 | gpt-5.6-sol | 54 | 221K | 8K | 1.6M | $2.23 | $4.48 | $5.14 |
-| claude-sonnet-4-6 | 30 | 34 | 9K | 1.9M | $1.25 | $5.22 | $2.89 |
+| claude-sonnet-4-6 | 43 | 49 | 13K | 2.7M | $1.82 | $7.33 | $4.05 |
 | claude-opus-4-6 | 2 | 3 | 348 | 0 | $1.08 | $0.00 | $0.00 |
 | kimi-k2.7-code-highspeed | 25 | 90K | 24K | 954K | $0.92 | $0.00 | $4.59 |
-| **Total** | **8,031** | **30.6M** | **1.8M** | **345.8M** | **$530.49** | **$2,154.85** | **$718.21** |
+| **Total** | **8,028** | **30.5M** | **1.8M** | **346.2M** | **$530.69** | **$2,155.78** | **$717.68** |
 
-_386.2M total tokens processed. 89.5% cache hit rate._
+_386.6M total tokens processed. 89.6% cache hit rate._
 
-_$2,873.06 total saved ($2,154.85 caching + $718.21 model routing vs all-Opus)._
+_$2,873.46 total saved ($2,155.78 caching + $717.68 model routing vs all-Opus)._
 
-_Model savings are modest because ~89.5% of tokens are cache reads, where price differences between models are small._
+_Model savings are modest because ~89.6% of tokens are cache reads, where price differences between models are small._
 
 ## AI Model Usage (all time)
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-6 | 13,686 | 115.9M | 5.2M | 1,852.3M | $6,720.38 | $25,007.19 | $0.00 |
-| claude-sonnet-4-6 | 33,013 | 127.8M | 8.5M | 1,799.1M | $1,372.01 | $4,857.66 | $4,209.62 |
+| claude-sonnet-4-6 | 33,026 | 127.8M | 8.6M | 1,799.9M | $1,372.57 | $4,859.77 | $4,210.78 |
 | claude-opus-4-7 | 913 | 1K | 722K | 113.2M | $367.72 | $1,529.44 | $0.00 |
 | gpt-5.5 | 14,946 | 66.2M | 2.2M | 447.1M | $324.18 | $1,207.18 | $1,467.87 |
 | k2p5 | 2,444 | 47.8M | 790K | 182.3M | $209.98 | $492.29 | $839.91 |
@@ -73,11 +73,11 @@ _Model savings are modest because ~89.5% of tokens are cache reads, where price 
 | big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **69,233** | **400.8M** | **18.9M** | **4,770.9M** | **$9,209.69** | **$34,012.36** | **$7,539.59** |
+| **Total** | **69,246** | **400.8M** | **18.9M** | **4,771.7M** | **$9,210.25** | **$34,014.47** | **$7,540.75** |
 
-_5,381.7M total tokens processed. 88.7% cache hit rate._
+_5,382.5M total tokens processed. 88.7% cache hit rate._
 
-_$41,551.95 total saved ($34,012.36 caching + $7,539.59 model routing vs all-Opus)._
+_$41,555.22 total saved ($34,014.47 caching + $7,540.75 model routing vs all-Opus)._
 
 _Model savings are modest because ~88.7% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -92,5 +92,5 @@ _Model savings are modest because ~88.7% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-11 10:39 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-11 11:58 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
