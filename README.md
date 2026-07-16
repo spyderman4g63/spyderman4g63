@@ -22,7 +22,7 @@
 | Worker/headless AI generation | 0.7h | 4.5h | 38.8h | 276.2h |
 | Additive observed work | 1.4h | 6.0h | 53.6h | 520.7h |
 | Interactive sessions | 1 | 3 | 30 | 418 |
-| Worker sessions | 27 | 61 | 660 | 3,738 |
+| Worker sessions | 29 | 63 | 662 | 3,740 |
 
 _Screen time from macos-pmset-display-assertions; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -37,16 +37,16 @@ _AI session 365-day totals cover 117 days of local assistant session history (no
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 1,026 | 1K | 780K | 128.5M | $417.31 | $1,735.24 | $0.00 |
-| gpt-5.5 | 5,478 | 22.8M | 837K | 167.9M | $116.60 | $453.60 | $526.13 |
-| gpt-5.6-sol | 605 | 1.9M | 69K | 25.0M | $25.70 | $67.57 | $57.30 |
+| gpt-5.5 | 5,465 | 22.7M | 835K | 167.5M | $116.31 | $452.38 | $524.79 |
+| gpt-5.6-sol | 639 | 2.0M | 73K | 26.3M | $27.10 | $71.04 | $60.40 |
 | k2p7 | 194 | 1.1M | 98K | 20.1M | $10.85 | $54.43 | $43.39 |
 | claude-sonnet-4-6 | 43 | 49 | 13K | 2.7M | $1.82 | $7.33 | $4.05 |
 | kimi-k2.7-code-highspeed | 25 | 90K | 24K | 954K | $0.92 | $0.00 | $4.59 |
-| **Total** | **7,371** | **25.9M** | **1.8M** | **345.3M** | **$573.20** | **$2,318.17** | **$635.47** |
+| **Total** | **7,392** | **26.0M** | **1.8M** | **346.2M** | **$574.31** | **$2,320.42** | **$637.22** |
 
-_382.2M total tokens processed. 90.4% cache hit rate._
+_383.1M total tokens processed. 90.4% cache hit rate._
 
-_$2,953.64 total saved ($2,318.17 caching + $635.47 model routing vs all-Opus)._
+_$2,957.64 total saved ($2,320.42 caching + $637.22 model routing vs all-Opus)._
 
 _Model savings are modest because ~90.4% of tokens are cache reads, where price differences between models are small._
 
@@ -62,7 +62,7 @@ _Model savings are modest because ~90.4% of tokens are cache reads, where price 
 | k2p6 | 861 | 4.1M | 266K | 99.0M | $46.19 | $267.56 | $184.77 |
 | gpt-5-codex | 1,366 | 20.5M | 309K | 123.9M | $46.12 | $334.68 | $413.52 |
 | gpt-5.4 | 689 | 9.0M | 231K | 61.0M | $41.96 | $114.39 | $181.12 |
-| gpt-5.6-sol | 605 | 1.9M | 69K | 25.0M | $25.70 | $67.57 | $57.30 |
+| gpt-5.6-sol | 639 | 2.0M | 73K | 26.3M | $27.10 | $71.04 | $60.40 |
 | gpt-5.3-codex | 352 | 2.5M | 132K | 29.8M | $24.47 | $55.98 | $67.19 |
 | gpt-5.3-codex-spark | 398 | 2.4M | 189K | 20.0M | $24.11 | $37.68 | $61.04 |
 | k2p7 | 194 | 1.1M | 98K | 20.1M | $10.85 | $54.43 | $43.39 |
@@ -76,11 +76,11 @@ _Model savings are modest because ~90.4% of tokens are cache reads, where price 
 | big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **69,910** | **402.5M** | **19.0M** | **4,810.3M** | **$9,283.31** | **$34,283.37** | **$7,592.91** |
+| **Total** | **69,944** | **402.6M** | **19.0M** | **4,811.6M** | **$9,284.71** | **$34,286.84** | **$7,596.00** |
 
-_5,424.1M total tokens processed. 88.7% cache hit rate._
+_5,425.5M total tokens processed. 88.7% cache hit rate._
 
-_$41,876.28 total saved ($34,283.37 caching + $7,592.91 model routing vs all-Opus)._
+_$41,882.84 total saved ($34,286.84 caching + $7,596.00 model routing vs all-Opus)._
 
 _Model savings are modest because ~88.7% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -95,5 +95,5 @@ _Model savings are modest because ~88.7% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-16 00:12 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-16 01:13 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
