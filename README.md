@@ -38,16 +38,16 @@ _AI session 365-day totals cover 127 days of local assistant session history (no
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 2,369 | 4K | 1.5M | 353.0M | $1,012.91 | $4,766.12 | $0.00 |
 | gpt-5.6-sol | 3,302 | 11.0M | 386K | 130.6M | $140.50 | $352.85 | $312.70 |
-| gpt-5.5 | 2,747 | 10.4M | 418K | 77.8M | $54.41 | $210.11 | $244.05 |
+| gpt-5.5 | 2,735 | 10.4M | 415K | 77.4M | $54.19 | $209.13 | $243.03 |
 | k2p7 | 132 | 750K | 57K | 14.8M | $7.57 | $40.06 | $30.27 |
 | claude-sonnet-4-6 | 89 | 99 | 30K | 6.1M | $3.50 | $16.52 | $9.14 |
 | kimi-k2.7-code-highspeed | 25 | 90K | 24K | 954K | $0.92 | $0.00 | $4.59 |
 | k3 | 7 | 225K | 1K | 299K | $0.79 | $0.81 | $3.16 |
-| **Total** | **8,671** | **22.5M** | **2.4M** | **583.7M** | **$1,220.60** | **$5,386.46** | **$603.92** |
+| **Total** | **8,659** | **22.5M** | **2.4M** | **583.3M** | **$1,220.38** | **$5,385.48** | **$602.90** |
 
-_628.6M total tokens processed. 92.9% cache hit rate._
+_628.2M total tokens processed. 92.9% cache hit rate._
 
-_$5,990.37 total saved ($5,386.46 caching + $603.92 model routing vs all-Opus)._
+_$5,988.38 total saved ($5,385.48 caching + $602.90 model routing vs all-Opus)._
 
 _Model savings are modest because ~92.9% of tokens are cache reads, where price differences between models are small._
 
@@ -97,5 +97,5 @@ _Model savings are modest because ~89% of tokens are cache reads, where price di
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-25 14:11 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-25 15:12 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
