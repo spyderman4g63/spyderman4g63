@@ -22,7 +22,7 @@
 | Worker/headless AI generation | 12.5h | 23.7h | 51.1h | 313.7h |
 | Additive observed work | 12.5h | 42.9h | 87.0h | 584.2h |
 | Interactive sessions | 0 | 3 | 39 | 436 |
-| Worker sessions | 119 | 321 | 602 | 4,161 |
+| Worker sessions | 120 | 322 | 603 | 4,162 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -38,17 +38,17 @@ _AI session 365-day totals cover 131 days of local assistant session history (no
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | claude-opus-4-7 | 3,403 | 5K | 2.5M | 525.8M | $1,504.87 | $7,098.77 | $0.00 |
 | gpt-5.6-sol | 6,082 | 20.8M | 795K | 254.6M | $271.91 | $687.53 | $603.26 |
-| gpt-5.5 | 1,958 | 7.1M | 302K | 56.1M | $38.30 | $151.69 | $171.54 |
+| gpt-5.5 | 1,949 | 7.1M | 300K | 55.8M | $38.08 | $150.89 | $170.55 |
 | claude-sonnet-4-6 | 89 | 99 | 30K | 6.1M | $3.50 | $16.52 | $9.14 |
 | kimi-k2.7-code-highspeed | 25 | 90K | 24K | 954K | $0.92 | $0.00 | $4.59 |
 | k3 | 7 | 225K | 1K | 299K | $0.79 | $0.81 | $3.16 |
 | k2p7 | 32 | 64K | 8K | 1.3M | $0.73 | $3.66 | $2.90 |
 | gpt-5.6-terra | 3 | 132K | 85 | 45K | $0.34 | $0.12 | $1.65 |
-| **Total** | **11,599** | **28.5M** | **3.6M** | **845.4M** | **$1,821.36** | **$7,959.09** | **$796.25** |
+| **Total** | **11,590** | **28.4M** | **3.6M** | **845.1M** | **$1,821.14** | **$7,958.30** | **$795.26** |
 
-_906.0M total tokens processed. 93.3% cache hit rate._
+_905.7M total tokens processed. 93.3% cache hit rate._
 
-_$8,755.35 total saved ($7,959.09 caching + $796.25 model routing vs all-Opus)._
+_$8,753.56 total saved ($7,958.30 caching + $795.26 model routing vs all-Opus)._
 
 _Model savings are modest because ~93.3% of tokens are cache reads, where price differences between models are small._
 
@@ -99,5 +99,5 @@ _Model savings are modest because ~89.3% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-07-29 14:43 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-07-29 15:44 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
