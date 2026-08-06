@@ -22,7 +22,7 @@
 | Worker/headless AI generation | 3.7h | 19.1h | 63.2h | 335.6h |
 | Additive observed work | 3.7h | 28.8h | 100.4h | 615.9h |
 | Interactive sessions | 0 | 6 | 27 | 442 |
-| Worker sessions | 86 | 375 | 875 | 4,564 |
+| Worker sessions | 88 | 377 | 877 | 4,566 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -36,18 +36,18 @@ _AI session 365-day totals cover 139 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-7 | 2,650 | 4K | 1.9M | 430.5M | $1,197.42 | $5,812.26 | $0.00 |
-| gpt-5.6-sol | 10,268 | 37.3M | 1.3M | 433.5M | $471.17 | $1,170.65 | $1,049.58 |
-| gpt-5.5 | 786 | 5.0M | 167K | 71.1M | $33.85 | $192.18 | $156.37 |
+| claude-opus-4-7 | 2,638 | 4K | 1.9M | 429.1M | $1,192.35 | $5,793.62 | $0.00 |
+| gpt-5.6-sol | 10,292 | 37.4M | 1.3M | 434.4M | $472.14 | $1,172.94 | $1,051.73 |
+| gpt-5.5 | 777 | 5.0M | 165K | 70.9M | $33.67 | $191.52 | $155.55 |
 | k3 | 165 | 797K | 76K | 17.6M | $8.83 | $47.55 | $35.31 |
 | claude-sonnet-4-6 | 59 | 65 | 20K | 4.1M | $2.24 | $11.30 | $6.25 |
 | gpt-5.6-luna | 37 | 216K | 3K | 958K | $0.35 | $2.59 | $3.95 |
 | gpt-5.6-terra | 3 | 132K | 85 | 45K | $0.34 | $0.12 | $1.65 |
-| **Total** | **13,968** | **43.6M** | **3.5M** | **958.0M** | **$1,714.20** | **$7,236.64** | **$1,253.11** |
+| **Total** | **13,971** | **43.6M** | **3.5M** | **957.3M** | **$1,709.92** | **$7,219.64** | **$1,254.44** |
 
-_1,027.1M total tokens processed. 93.3% cache hit rate._
+_1,026.3M total tokens processed. 93.3% cache hit rate._
 
-_$8,489.75 total saved ($7,236.64 caching + $1,253.11 model routing vs all-Opus)._
+_$8,474.08 total saved ($7,219.64 caching + $1,254.44 model routing vs all-Opus)._
 
 _Model savings are modest because ~93.3% of tokens are cache reads, where price differences between models are small._
 
@@ -58,7 +58,7 @@ _Model savings are modest because ~93.3% of tokens are cache reads, where price 
 | claude-opus-4-6 | 13,686 | 115.9M | 5.2M | 1,852.3M | $6,720.38 | $25,007.19 | $0.00 |
 | claude-opus-4-7 | 3,529 | 6K | 2.6M | 540.3M | $1,549.99 | $7,294.85 | $0.00 |
 | claude-sonnet-4-6 | 33,072 | 127.8M | 8.6M | 1,803.3M | $1,374.25 | $4,868.96 | $4,215.87 |
-| gpt-5.6-sol | 10,268 | 37.3M | 1.3M | 433.5M | $471.17 | $1,170.65 | $1,049.58 |
+| gpt-5.6-sol | 10,292 | 37.4M | 1.3M | 434.4M | $472.14 | $1,172.94 | $1,051.73 |
 | gpt-5.5 | 15,312 | 69.8M | 2.3M | 505.9M | $349.93 | $1,366.15 | $1,588.17 |
 | k2p5 | 2,444 | 47.8M | 790K | 182.3M | $209.98 | $492.29 | $839.91 |
 | k2p6 | 861 | 4.1M | 266K | 99.0M | $46.19 | $267.56 | $184.77 |
@@ -80,11 +80,11 @@ _Model savings are modest because ~93.3% of tokens are cache reads, where price 
 | big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
 | minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
 | registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **82,693** | **442.7M** | **22.3M** | **5,711.5M** | **$10,898.41** | **$41,164.46** | **$8,751.50** |
+| **Total** | **82,717** | **442.8M** | **22.3M** | **5,712.4M** | **$10,899.38** | **$41,166.76** | **$8,753.65** |
 
-_6,389.2M total tokens processed. 89.4% cache hit rate._
+_6,390.1M total tokens processed. 89.4% cache hit rate._
 
-_$49,915.96 total saved ($41,164.46 caching + $8,751.50 model routing vs all-Opus)._
+_$49,920.40 total saved ($41,166.76 caching + $8,753.65 model routing vs all-Opus)._
 
 _Model savings are modest because ~89.4% of tokens are cache reads, where price differences between models are small._
 <!-- STATS-END -->
@@ -99,7 +99,7 @@ _Model savings are modest because ~89.4% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-08-06 11:02 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-08-06 12:05 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <div align="center">
