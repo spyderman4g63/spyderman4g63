@@ -15,7 +15,7 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 24h | 156.5h | 551.1h | ~6773h* |
+| Screen time (Mac) | 24h | 144h | 575.1h | ~6805h* |
 | Interactive human attention | 0.0h | 0.0h | 0.0h | 120.2h |
 | Interactive AI generation | 0.0h | 0.0h | 0.1h | 160.2h |
 | Worker-classified human attention | 0.0h | 0.0h | 0.0h | 0.0h |
@@ -37,11 +37,11 @@ _AI session 365-day totals cover 169 days of local assistant session history (no
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | gpt-5.6-terra | 17,560 | 72.5M | 1.9M | 686.3M | 90.4% | 1,741 | 60.5h |
-| gpt-5.6-sol | 661 | 2.6M | 89K | 28.7M | 91.5% | 60 | 2.8h |
+| gpt-5.6-sol | 620 | 2.5M | 85K | 26.1M | 91.2% | 58 | 2.6h |
 | gpt-5.6-luna | 1 | 27K | 52 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **18,222** | **75.2M** | **2.0M** | **715.0M** | **90.5%** | **1,802** | **63.3h** |
+| **Total** | **18,181** | **75.1M** | **2.0M** | **712.4M** | **90.5%** | **1,800** | **63.1h** |
 
-_792.4M total tokens processed. 90.5% cache hit rate._
+_789.6M total tokens processed. 90.5% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -98,7 +98,7 @@ _7,170.9M total tokens processed. 92.5% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-05 04:38 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-05 05:08 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
