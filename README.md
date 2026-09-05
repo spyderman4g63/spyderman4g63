@@ -98,11 +98,11 @@ _7,170.2M total tokens processed. 92.5% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-05 01:30 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-05 02:02 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <div align="center">
-  <a href="https://commit-history.com/spyderman4g63">
+  <a href="https://commit-history.com/spyderman4g63?metric=total">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://commit-history.com/embed/spyderman4g63?theme=dark" />
     <img alt="spyderman4g63's commit history" src="https://commit-history.com/embed/spyderman4g63" />
