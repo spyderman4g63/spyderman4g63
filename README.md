@@ -22,7 +22,7 @@
 | Worker/headless AI generation | 1.8h | 16.4h | 61.0h | 399.4h |
 | Additive observed work | 1.8h | 16.4h | 61.1h | 679.8h |
 | Interactive sessions | 0 | 1 | 4 | 446 |
-| Worker sessions | 76 | 484 | 1,749 | 6,352 |
+| Worker sessions | 77 | 485 | 1,750 | 6,353 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -34,54 +34,58 @@ _AI session 365-day totals cover 168 days of local assistant session history (no
 
 ## AI Model Usage (last 30 days)
 
-| Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
+| Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-terra | 17,532 | 72.3M | 1.9M | 685.2M | $335.18 | $1,850.15 | $1,809.67 |
-| gpt-5.6-sol | 767 | 3.0M | 106K | 33.5M | $37.04 | $90.69 | $83.01 |
-| **Total** | **18,299** | **75.3M** | **2.1M** | **718.8M** | **$372.22** | **$1,940.83** | **$1,892.67** |
+| gpt-5.6-terra | 17,544 | 72.3M | 1.9M | 685.8M | 90.5% | 1,737 | 60.4h |
+| gpt-5.6-sol | 745 | 2.9M | 102K | 32.6M | 91.7% | 67 | 3.7h |
+| gpt-5.6-luna | 1 | 27K | 52 | 0 | 0.0% | 1 | 0.0h |
+| **Total** | **18,290** | **75.3M** | **2.0M** | **718.5M** | **90.5%** | **1,805** | **64.1h** |
 
-_796.2M total tokens processed. 90.3% cache hit rate._
-
-_$3,833.51 total saved ($1,940.83 caching + $1,892.67 model routing vs all-Opus)._
-
-_Model savings are modest because ~90.3% of tokens are cache reads, where price differences between models are small._
+_795.9M total tokens processed. 90.5% cache hit rate._
 
 ## AI Model Usage (all time)
 
-| Model | Requests | Input | Output | Cache read | API Cost | Cache savings | Model savings |
+| Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| claude-opus-4-6 | 13,686 | 115.9M | 5.2M | 1,852.3M | $6,720.38 | $25,007.19 | $0.00 |
-| claude-opus-4-7 | 3,529 | 6K | 2.6M | 540.3M | $1,549.99 | $7,294.85 | $0.00 |
-| claude-sonnet-4-6 | 33,072 | 127.8M | 8.6M | 1,803.3M | $1,374.25 | $4,868.96 | $4,215.87 |
-| gpt-5.6-sol | 10,712 | 39.2M | 1.4M | 452.4M | $492.74 | $1,221.66 | $1,098.06 |
-| gpt-5.5 | 15,312 | 69.8M | 2.3M | 505.9M | $349.93 | $1,366.15 | $1,588.17 |
-| gpt-5.6-terra | 17,535 | 72.4M | 1.9M | 685.2M | $335.45 | $1,850.27 | $1,811.32 |
-| k2p5 | 2,444 | 47.8M | 790K | 182.3M | $209.98 | $492.29 | $839.91 |
-| k2p6 | 861 | 4.1M | 266K | 99.0M | $46.19 | $267.56 | $184.77 |
-| gpt-5-codex | 1,366 | 20.5M | 309K | 123.9M | $46.12 | $334.68 | $413.52 |
-| gpt-5.4 | 689 | 9.0M | 231K | 61.0M | $41.96 | $114.39 | $181.12 |
-| gpt-5.3-codex | 352 | 2.5M | 132K | 29.8M | $24.47 | $55.98 | $67.19 |
-| gpt-5.3-codex-spark | 398 | 2.4M | 189K | 20.0M | $24.11 | $37.68 | $61.04 |
-| k2p7 | 194 | 1.1M | 98K | 20.1M | $10.85 | $54.43 | $43.39 |
-| gpt-5.5-fast | 128 | 2.0M | 51K | 14.3M | $9.57 | $38.84 | $44.49 |
-| k3 | 165 | 797K | 76K | 17.6M | $8.83 | $47.55 | $35.31 |
-| claude-sonnet-4 | 35 | 76 | 598 | 142K | $5.66 | $0.39 | $0.21 |
-| gpt-5.2-codex | 64 | 372K | 22K | 2.7M | $1.09 | $5.09 | $8.47 |
-| kimi-k2.7-code-highspeed | 25 | 90K | 24K | 954K | $0.92 | $0.00 | $4.59 |
-| gpt-5.4-fast | 37 | 135K | 3K | 1.6M | $0.87 | $3.17 | $3.43 |
-| qwen3.6-plus-free | 17 | 90 | 3K | 713K | $0.50 | $1.93 | $1.04 |
-| nemotron-3-super-free | 2 | 133K | 485 | 0 | $0.41 | $0.00 | $1.63 |
-| big-pickle | 5 | 56K | 827 | 228K | $0.28 | $0.00 | $1.26 |
-| minimax-m2.5-free | 2 | 35K | 195 | 35K | $0.12 | $0.00 | $0.61 |
-| gpt-5.6-luna | 38 | 244K | 3K | 958K | $0.08 | $2.59 | $4.29 |
-| registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | $0.07 | $0.00 | $0.28 |
-| **Total** | **100,670** | **516.9M** | **24.4M** | **6,415.7M** | **$11,254.82** | **$43,065.62** | **$10,609.98** |
+| claude-sonnet-4-6 | 33,072 | 127.8M | 8.6M | 1,803.3M | 93.4% | 2,059 | 174.8h |
+| gpt-5.6-terra | 17,547 | 72.5M | 1.9M | 685.8M | 90.4% | 1,740 | 60.5h |
+| gpt-5.5 | 15,312 | 69.8M | 2.3M | 505.9M | 87.9% | 1,669 | 96.8h |
+| claude-opus-4-6 | 13,686 | 115.9M | 5.2M | 1,852.3M | 94.1% | 225 | 87.0h |
+| gpt-5.6-sol | 10,712 | 39.2M | 1.4M | 452.4M | 92.0% | 892 | 64.9h |
+| claude-opus-4-7 | 3,529 | 6K | 2.6M | 540.3M | 100.0% | 39 | 21.8h |
+| k2p5 | 2,444 | 47.8M | 790K | 182.3M | 79.2% | 75 | 18.0h |
+| gpt-5-codex | 1,366 | 20.5M | 309K | 123.9M | 85.8% | 15 | 5.6h |
+| k2p6 | 861 | 4.1M | 266K | 99.0M | 96.0% | 14 | 3.6h |
+| gpt-5.4 | 689 | 9.0M | 231K | 61.0M | 87.1% | 24 | 13.8h |
+| gpt-5.3-codex-spark | 398 | 2.4M | 189K | 20.0M | 89.0% | 3 | 1.1h |
+| gpt-5.3-codex | 352 | 2.5M | 132K | 29.8M | 92.0% | 7 | 2.1h |
+| k2p7 | 194 | 1.1M | 98K | 20.1M | 94.8% | 5 | 0.9h |
+| k3 | 165 | 797K | 76K | 17.6M | 95.7% | 4 | 1.5h |
+| gpt-5.5-fast | 128 | 2.0M | 51K | 14.3M | 87.7% | 1 | 2.3h |
+| gpt-5.2-codex | 64 | 372K | 22K | 2.7M | 87.9% | 4 | 0.3h |
+| gpt-5.6-luna | 38 | 244K | 3K | 958K | 79.7% | 8 | 0.1h |
+| gpt-5.4-fast | 37 | 135K | 3K | 1.6M | 92.6% | 2 | 0.1h |
+| claude-sonnet-4 | 35 | 76 | 598 | 142K | 99.9% | 33 | 0.0h |
+| kimi-k2.7-code-highspeed | 25 | 90K | 24K | 954K | 91.3% | 3 | 0.1h |
+| qwen3.6-plus-free | 17 | 90 | 3K | 713K | 100.0% | 2 | 0.0h |
+| big-pickle | 5 | 56K | 827 | 228K | 80.1% | 1 | 0.0h |
+| claude-3-sonnet | 4 | 0 | 0 | 0 | 0.0% | 3 | 0.0h |
+| pool-account-management | 4 | 0 | 0 | 0 | 0.0% | 3 | 0.0h |
+| qwopus | 4 | 0 | 0 | 0 | 0.0% | 3 | 0.0h |
+| claude-fable-5 | 2 | 0 | 0 | 0 | 0.0% | 2 | 0.0h |
+| minimax-m2.5-free | 2 | 35K | 195 | 35K | 49.9% | 1 | 0.0h |
+| nemotron-3-super-free | 2 | 133K | 485 | 0 | 0.0% | 1 | 0.0h |
+| qwopus-local | 2 | 0 | 0 | 0 | 0.0% | 2 | 0.0h |
+| registry.ollama.ai/library/qwopus:latest | 2 | 22K | 143 | 0 | 0.0% | 1 | 0.0h |
+| claude-3-opus | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| claude-haiku-4-5 | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| gemini-3.1-flash-lite-preview | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| gpt-5.1-codex | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| gpt-5.5-pro | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| mimo-v2-pro-free | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
+| **Total** | **100,704** | **517.0M** | **24.4M** | **6,416.2M** | **92.5%** | **6,765** | **555.4h** |
 
-_7,169.6M total tokens processed. 89.5% cache hit rate._
-
-_$53,675.60 total saved ($43,065.62 caching + $10,609.98 model routing vs all-Opus)._
-
-_Model savings are modest because ~89.5% of tokens are cache reads, where price differences between models are small._
+_7,170.2M total tokens processed. 92.5% cache hit rate._
 <!-- STATS-END -->
 
 ## Projects
@@ -94,12 +98,14 @@ _Model savings are modest because ~89.5% of tokens are cache reads, where price 
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-05 00:29 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-05 01:30 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <div align="center">
+  <a href="https://commit-history.com/spyderman4g63">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://commit-history.com/embed/spyderman4g63?theme=dark" />
     <img alt="spyderman4g63's commit history" src="https://commit-history.com/embed/spyderman4g63" />
   </picture>
+  </a>
 </div>
