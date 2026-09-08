@@ -15,7 +15,7 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 15h | 140.7h | 554.4h | /Users/jward6762h* |
+| Screen time (Mac) | unavailable | 125.6h | 554.4h | /Users/jward6762h* |
 | Interactive human attention | 0.0h | 0.0h | 0.0h | 120.2h |
 | Interactive AI generation | 0.9h | 0.9h | 1.0h | 161.2h |
 | Worker-classified human attention | 0.2h | 0.2h | 0.2h | 0.2h |
@@ -24,7 +24,7 @@
 | Interactive sessions | 3 | 3 | 5 | 449 |
 | Worker sessions | 25 | 274 | 1,610 | 6,427 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -36,12 +36,12 @@ _AI session 365-day totals cover 172 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-terra | 16,564 | 70.2M | 1.9M | 668.9M | 90.5% | 1,602 | 57.8h |
+| gpt-5.6-terra | 16,554 | 70.2M | 1.9M | 668.5M | 90.5% | 1,601 | 57.8h |
 | gpt-5.6-sol | 842 | 2.1M | 70K | 75.0M | 97.2% | 28 | 3.8h |
 | gpt-5.6-luna | 3 | 113K | 121 | 0 | 0.0% | 3 | 0.0h |
-| **Total** | **17,409** | **72.5M** | **1.9M** | **744.0M** | **91.1%** | **1,633** | **61.7h** |
+| **Total** | **17,399** | **72.5M** | **1.9M** | **743.6M** | **91.1%** | **1,632** | **61.6h** |
 
-_818.5M total tokens processed. 91.1% cache hit rate._
+_818.1M total tokens processed. 91.1% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -98,7 +98,7 @@ _7,289.0M total tokens processed. 92.6% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-08 15:12 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-08 17:15 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
