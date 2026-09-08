@@ -15,7 +15,7 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 15h | 140.7h | 554.4h | ~6762h* |
+| Screen time (Mac) | 15h | 140.6h | 569.4h | /Users/jward6742h* |
 | Interactive human attention | 0.0h | 0.0h | 0.0h | 120.2h |
 | Interactive AI generation | 0.9h | 0.9h | 1.0h | 161.2h |
 | Worker-classified human attention | 0.2h | 0.2h | 0.2h | 0.2h |
@@ -36,12 +36,12 @@ _AI session 365-day totals cover 172 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-terra | 16,542 | 70.1M | 1.8M | 668.3M | 90.5% | 1,597 | 57.8h |
+| gpt-5.6-terra | 16,539 | 70.1M | 1.8M | 668.2M | 90.5% | 1,595 | 57.7h |
 | gpt-5.6-sol | 842 | 2.1M | 70K | 75.0M | 97.2% | 28 | 3.8h |
 | gpt-5.6-luna | 3 | 113K | 121 | 0 | 0.0% | 3 | 0.0h |
-| **Total** | **17,387** | **72.4M** | **1.9M** | **743.3M** | **91.1%** | **1,628** | **61.6h** |
+| **Total** | **17,384** | **72.4M** | **1.9M** | **743.3M** | **91.1%** | **1,626** | **61.6h** |
 
-_817.8M total tokens processed. 91.1% cache hit rate._
+_817.7M total tokens processed. 91.1% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -98,7 +98,7 @@ _7,289.0M total tokens processed. 92.6% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-08 19:11 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-08 20:19 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
