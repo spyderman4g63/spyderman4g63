@@ -15,33 +15,33 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 5.7h | 125.7h | 567.1h | /Users/jward6762h* |
+| Screen time (Mac) | unavailable | 125.6h | 554.4h | /Users/jward6762h* |
 | Interactive human attention | 0.0h | 0.0h | 0.0h | 120.2h |
-| Interactive AI generation | 0.0h | 0.0h | 0.1h | 160.2h |
-| Worker-classified human attention | 0.0h | 0.0h | 0.0h | 0.0h |
-| Worker/headless AI generation | 1.6h | 10.9h | 58.3h | 402.0h |
-| Additive observed work | 1.6h | 10.9h | 58.4h | 682.4h |
-| Interactive sessions | 3 | 4 | 6 | 449 |
-| Worker sessions | 49 | 329 | 1,628 | 6,423 |
+| Interactive AI generation | 0.9h | 0.9h | 1.0h | 161.2h |
+| Worker-classified human attention | 0.2h | 0.2h | 0.2h | 0.2h |
+| Worker/headless AI generation | 2.5h | 11.1h | 59.4h | 404.5h |
+| Additive observed work | 3.6h | 12.2h | 60.6h | 686.1h |
+| Interactive sessions | 3 | 3 | 5 | 449 |
+| Worker sessions | 21 | 270 | 1,606 | 6,423 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 171 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 172 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-terra | 16,677 | 70.7M | 1.9M | 672.3M | 90.5% | 1,621 | 58.2h |
+| gpt-5.6-terra | 16,663 | 70.6M | 1.9M | 671.9M | 90.5% | 1,619 | 58.2h |
 | gpt-5.6-sol | 617 | 1.7M | 53K | 51.0M | 96.6% | 24 | 2.9h |
 | gpt-5.6-luna | 3 | 113K | 121 | 0 | 0.0% | 3 | 0.0h |
-| **Total** | **17,297** | **72.6M** | **1.9M** | **723.4M** | **90.9%** | **1,648** | **61.2h** |
+| **Total** | **17,283** | **72.5M** | **1.9M** | **722.9M** | **90.9%** | **1,646** | **61.2h** |
 
-_798.0M total tokens processed. 90.9% cache hit rate._
+_797.4M total tokens processed. 90.9% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -98,7 +98,7 @@ _7,264.5M total tokens processed. 92.6% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-08 03:52 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-08 05:56 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
