@@ -15,7 +15,7 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | unavailable | 116.6h | 566.9h | /Users/jward6742h* |
+| Screen time (Mac) | 24h | 139h | 566.9h | ~6742h* |
 | Interactive human attention | 0.0h | 0.0h | 0.0h | 120.2h |
 | Interactive AI generation | 0.0h | 0.9h | 1.0h | 161.2h |
 | Worker-classified human attention | 0.0h | 0.2h | 0.2h | 0.2h |
@@ -24,7 +24,7 @@
 | Interactive sessions | 0 | 3 | 5 | 449 |
 | Worker sessions | 15 | 221 | 1,619 | 6,438 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -98,7 +98,7 @@ _7,327.8M total tokens processed. 92.6% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-09 16:45 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-09 19:13 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
