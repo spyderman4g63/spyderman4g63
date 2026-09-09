@@ -15,22 +15,22 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 15h | 140.6h | 569.4h | /Users/jward6742h* |
+| Screen time (Mac) | unavailable | 116.6h | 566.9h | /Users/jward6742h* |
 | Interactive human attention | 0.0h | 0.0h | 0.0h | 120.2h |
-| Interactive AI generation | 0.9h | 0.9h | 1.0h | 161.2h |
-| Worker-classified human attention | 0.2h | 0.2h | 0.2h | 0.2h |
-| Worker/headless AI generation | 2.5h | 11.1h | 59.4h | 404.5h |
-| Additive observed work | 3.6h | 12.2h | 60.6h | 686.1h |
-| Interactive sessions | 3 | 3 | 5 | 449 |
-| Worker sessions | 31 | 280 | 1,616 | 6,433 |
+| Interactive AI generation | 0.0h | 0.9h | 1.0h | 161.2h |
+| Worker-classified human attention | 0.0h | 0.2h | 0.2h | 0.2h |
+| Worker/headless AI generation | 1.7h | 10.7h | 60.8h | 406.2h |
+| Additive observed work | 1.7h | 11.8h | 62.0h | 687.8h |
+| Interactive sessions | 0 | 3 | 5 | 449 |
+| Worker sessions | 10 | 216 | 1,614 | 6,433 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 172 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 173 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
@@ -98,7 +98,7 @@ _7,304.8M total tokens processed. 92.6% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-09 03:16 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-09 05:19 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
