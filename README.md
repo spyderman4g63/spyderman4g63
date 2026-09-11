@@ -22,7 +22,7 @@
 | Worker/headless AI generation | 6.2h | 15.7h | 65.9h | 415.1h |
 | Additive observed work | 6.2h | 16.8h | 67.1h | 696.6h |
 | Interactive sessions | 0 | 3 | 5 | 449 |
-| Worker sessions | 44 | 164 | 1,579 | 6,495 |
+| Worker sessions | 48 | 168 | 1,583 | 6,499 |
 
 _Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
@@ -37,11 +37,11 @@ _AI session 365-day totals cover 175 days of local assistant session history (no
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | gpt-5.6-terra | 16,411 | 69.6M | 1.8M | 663.7M | 90.5% | 1,582 | 57.2h |
-| gpt-5.6-sol | 2,560 | 7.2M | 219K | 209.9M | 96.7% | 95 | 14.8h |
+| gpt-5.6-sol | 2,647 | 7.5M | 230K | 216.6M | 96.6% | 99 | 15.4h |
 | gpt-5.6-luna | 3 | 113K | 121 | 0 | 0.0% | 3 | 0.0h |
-| **Total** | **18,974** | **77.0M** | **2.1M** | **873.6M** | **91.9%** | **1,680** | **72.0h** |
+| **Total** | **19,061** | **77.2M** | **2.1M** | **880.3M** | **91.9%** | **1,684** | **72.6h** |
 
-_952.7M total tokens processed. 91.9% cache hit rate._
+_959.7M total tokens processed. 91.9% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -51,7 +51,7 @@ _952.7M total tokens processed. 91.9% cache hit rate._
 | gpt-5.6-terra | 18,143 | 75.7M | 2.0M | 724.8M | 90.5% | 1,788 | 63.2h |
 | gpt-5.5 | 15,312 | 69.8M | 2.3M | 505.9M | 87.9% | 1,669 | 96.8h |
 | claude-opus-4-6 | 13,686 | 115.9M | 5.2M | 1,852.3M | 94.1% | 225 | 87.0h |
-| gpt-5.6-sol | 13,272 | 46.5M | 1.6M | 662.3M | 93.4% | 987 | 79.7h |
+| gpt-5.6-sol | 13,359 | 46.7M | 1.6M | 669.0M | 93.5% | 991 | 80.3h |
 | claude-opus-4-7 | 3,529 | 6K | 2.6M | 540.3M | 100.0% | 39 | 21.8h |
 | k2p5 | 2,444 | 47.8M | 790K | 182.3M | 79.2% | 75 | 18.0h |
 | gpt-5-codex | 1,366 | 20.5M | 309K | 123.9M | 85.8% | 15 | 5.6h |
@@ -83,9 +83,9 @@ _952.7M total tokens processed. 91.9% cache hit rate._
 | gpt-5.1-codex | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-5.5-pro | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | mimo-v2-pro-free | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **103,862** | **527.6M** | **24.7M** | **6,665.2M** | **92.7%** | **6,910** | **572.9h** |
+| **Total** | **103,949** | **527.8M** | **24.7M** | **6,671.9M** | **92.7%** | **6,914** | **573.5h** |
 
-_7,430.1M total tokens processed. 92.7% cache hit rate._
+_7,437.0M total tokens processed. 92.7% cache hit rate._
 <!-- STATS-END -->
 
 ## Projects
@@ -98,7 +98,7 @@ _7,430.1M total tokens processed. 92.7% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-11 08:14 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-11 09:28 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
