@@ -15,7 +15,7 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | unavailable | 115.9h | 574.9h | ~6855h* |
+| Screen time (Mac) | 12.6h | 122.7h | 574.9h | ~6855h* |
 | Interactive human attention | 0.0h | 0.0h | 0.0h | 120.2h |
 | Interactive AI generation | 0.0h | 0.9h | 1.0h | 161.2h |
 | Worker-classified human attention | 0.0h | 0.2h | 0.2h | 0.2h |
@@ -24,7 +24,7 @@
 | Interactive sessions | 0 | 3 | 5 | 449 |
 | Worker sessions | 55 | 204 | 1,498 | 6,578 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
@@ -36,12 +36,12 @@ _AI session 365-day totals cover 177 days of local assistant session history (no
 
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-terra | 14,758 | 63.0M | 1.7M | 595.8M | 90.4% | 1,423 | 51.4h |
+| gpt-5.6-terra | 14,709 | 62.8M | 1.6M | 594.1M | 90.4% | 1,418 | 51.3h |
 | gpt-5.6-sol | 4,708 | 12.7M | 416K | 374.4M | 96.7% | 175 | 27.6h |
 | gpt-5.6-luna | 5 | 199K | 332 | 0 | 0.0% | 5 | 0.0h |
-| **Total** | **19,471** | **75.9M** | **2.1M** | **970.3M** | **92.7%** | **1,603** | **79.0h** |
+| **Total** | **19,422** | **75.7M** | **2.1M** | **968.6M** | **92.7%** | **1,598** | **78.9h** |
 
-_1,048.4M total tokens processed. 92.7% cache hit rate._
+_1,046.5M total tokens processed. 92.7% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -98,7 +98,7 @@ _7,600.4M total tokens processed. 92.8% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-13 21:05 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-13 22:02 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
