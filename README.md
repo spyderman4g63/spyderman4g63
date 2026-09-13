@@ -15,33 +15,33 @@
 
 | Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
 | --- | ---: | ---: | ---: | ---: |
-| Screen time (Mac) | 23.2h | 139.9h | 598.5h | ~6855h* |
+| Screen time (Mac) | unavailable | 115.9h | 574.9h | ~6855h* |
 | Interactive human attention | 0.0h | 0.0h | 0.0h | 120.2h |
 | Interactive AI generation | 0.0h | 0.9h | 1.0h | 161.2h |
 | Worker-classified human attention | 0.0h | 0.2h | 0.2h | 0.2h |
-| Worker/headless AI generation | 5.7h | 20.9h | 68.6h | 420.8h |
-| Additive observed work | 5.7h | 22.0h | 69.8h | 702.4h |
+| Worker/headless AI generation | 5.5h | 25.9h | 71.8h | 426.3h |
+| Additive observed work | 5.5h | 27.0h | 73.0h | 707.9h |
 | Interactive sessions | 0 | 3 | 5 | 449 |
-| Worker sessions | 67 | 199 | 1,545 | 6,556 |
+| Worker sessions | 35 | 184 | 1,478 | 6,558 |
 
-_Screen time from screen-time-history:daily-observations; collection status: ok. *365-day estimate uses observed calendar coverage._
+_Screen time from screen-time-history:daily-observations; collection status: ok, unavailable. *365-day estimate uses observed calendar coverage._
 
 _Periods are completed local calendar days ending at midnight; today is excluded._
 
 _Human attention is unioned wall-clock time, so overlapping sessions are not double-counted. AI generation is additive machine work across sessions; it is not wall-clock concurrency._
 
-_AI session 365-day totals cover 176 days of local assistant session history (not extrapolated)._
+_AI session 365-day totals cover 177 days of local assistant session history (not extrapolated)._
 
 ## AI Model Usage (last 30 days)
 
 | Model | Requests | Input | Output | Cache read | Cache Hit-Rate % | Session Count | Session Hours |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| gpt-5.6-terra | 15,401 | 65.5M | 1.7M | 620.4M | 90.4% | 1,485 | 53.5h |
-| gpt-5.6-sol | 4,217 | 11.2M | 375K | 337.0M | 96.8% | 153 | 24.6h |
+| gpt-5.6-terra | 15,357 | 65.4M | 1.7M | 618.7M | 90.4% | 1,482 | 53.3h |
+| gpt-5.6-sol | 4,272 | 11.4M | 379K | 341.0M | 96.7% | 155 | 25.1h |
 | gpt-5.6-luna | 5 | 199K | 332 | 0 | 0.0% | 5 | 0.0h |
-| **Total** | **19,623** | **77.0M** | **2.1M** | **957.5M** | **92.6%** | **1,643** | **78.1h** |
+| **Total** | **19,634** | **77.0M** | **2.1M** | **959.7M** | **92.6%** | **1,642** | **78.4h** |
 
-_1,036.7M total tokens processed. 92.6% cache hit rate._
+_1,038.9M total tokens processed. 92.6% cache hit rate._
 
 ## AI Model Usage (all time)
 
@@ -50,7 +50,7 @@ _1,036.7M total tokens processed. 92.6% cache hit rate._
 | claude-sonnet-4-6 | 33,072 | 127.8M | 8.6M | 1,803.3M | 93.4% | 2,059 | 174.8h |
 | gpt-5.6-terra | 18,143 | 75.7M | 2.0M | 724.8M | 90.5% | 1,788 | 63.2h |
 | gpt-5.5 | 15,312 | 69.8M | 2.3M | 505.9M | 87.9% | 1,669 | 96.8h |
-| gpt-5.6-sol | 14,929 | 50.5M | 1.7M | 789.5M | 94.0% | 1,045 | 89.5h |
+| gpt-5.6-sol | 14,984 | 50.7M | 1.7M | 793.5M | 94.0% | 1,047 | 90.0h |
 | claude-opus-4-6 | 13,686 | 115.9M | 5.2M | 1,852.3M | 94.1% | 225 | 87.0h |
 | claude-opus-4-7 | 3,529 | 6K | 2.6M | 540.3M | 100.0% | 39 | 21.8h |
 | k2p5 | 2,444 | 47.8M | 790K | 182.3M | 79.2% | 75 | 18.0h |
@@ -83,9 +83,9 @@ _1,036.7M total tokens processed. 92.6% cache hit rate._
 | gpt-5.1-codex | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | gpt-5.5-pro | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
 | mimo-v2-pro-free | 1 | 0 | 0 | 0 | 0.0% | 1 | 0.0h |
-| **Total** | **105,521** | **531.7M** | **24.9M** | **6,792.4M** | **92.7%** | **6,970** | **582.7h** |
+| **Total** | **105,576** | **531.9M** | **24.9M** | **6,796.3M** | **92.7%** | **6,972** | **583.2h** |
 
-_7,561.5M total tokens processed. 92.7% cache hit rate._
+_7,565.6M total tokens processed. 92.7% cache hit rate._
 <!-- STATS-END -->
 
 ## Projects
@@ -98,7 +98,7 @@ _7,561.5M total tokens processed. 92.7% cache hit rate._
 ---
 
 <!-- UPDATED-START -->
-_Stats auto-updated 2026-09-13 03:55 UTC by [aidevops](https://aidevops.sh) pulse._
+_Stats auto-updated 2026-09-13 04:42 UTC by [aidevops](https://aidevops.sh) pulse._
 <!-- UPDATED-END -->
 
 <!-- TOTAL-CONTRIBUTIONS-START -->
